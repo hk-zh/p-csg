@@ -166,25 +166,29 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop content">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/architecture.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-justified">
-            The top-down LiDAR pseudo image and front camera image go through two residual networks to extract 512 dimension feature vectors. We use four different MLPs to extract the shared features and the unique features. The unique features of RGB input are used to generate stop signs and traffic light indicators. The shared features of LiDAR are used to reconstruct the segmentation of RGB input while the shared features of RGB are used to reconstruct the segmentation of top-down LiDAR input. An alignment loss is used to align the shared features from LiDAR and camera inputs into the same space. These shared features and unique features are concatenated along with the measurements (velocity, throttle, steer, brake from the last frame) and then go through one MLP to reduce the size. Finally, they will be fed into one GRU decoder to predict short-term waypoints.
-          </h2>
+          <img src="static/images/architecture.png" alt="MY ALT TEXT"/> <br>
+          <div class="content has-text-justified">
+            <p>
+              The top-down LiDAR pseudo image and front camera image go through two residual networks to extract 512 dimension feature vectors. We use four different MLPs to extract the shared features and the unique features. The unique features of RGB input are used to generate stop signs and traffic light indicators. The shared features of LiDAR are used to reconstruct the segmentation of RGB input while the shared features of RGB are used to reconstruct the segmentation of top-down LiDAR input. An alignment loss is used to align the shared features from LiDAR and camera inputs into the same space. These shared features and unique features are concatenated along with the measurements (velocity, throttle, steer, brake from the last frame) and then go through one MLP to reduce the size. Finally, they will be fed into one GRU decoder to predict short-term waypoints.
+            </p>
+          </div>
         </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/penalty.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-justified">
-          To ensure compliance with red light and stop penalty rules, as well as promoting deceleration during turning maneuvers, our approach incorporates three distinct penalty types. The first column of the figures exemplifies the red light penalty, wherein waypoints situated beyond the stop line receive a penalty when the traffic light is red. In the second column, we demonstrate the stop sign penalty, wherein predicted waypoints within the vicinity of a stop sign are penalized if the agent fails to decelerate adequately. The speed penalty is enforced during turning actions as shown in last two figures. Specifically, if the predicted waypoints indicate an excessive speed, a speed penalty is imposed.
-        </h2>
+        <div class="content has-text-justified">
+          <p>
+            To ensure compliance with red light and stop penalty rules, as well as promoting deceleration during turning maneuvers, our approach incorporates three distinct penalty types. The first column of the figures exemplifies the red light penalty, wherein waypoints situated beyond the stop line receive a penalty when the traffic light is red. In the second column, we demonstrate the stop sign penalty, wherein predicted waypoints within the vicinity of a stop sign are penalized if the agent fails to decelerate adequately. The speed penalty is enforced during turning actions as shown in last two figures. Specifically, if the predicted waypoints indicate an excessive speed, a speed penalty is imposed.
+          </p>
+        </div>
      </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
@@ -342,35 +346,35 @@
 <!--End BibTex citation -->
 
   <section class="hero is-small is-light">
-  <div class="hero-body">
+    <div class="hero-body">
+      <div class="container is-max-desktop content">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="column is-centered has-text-centered">
+              <span class="icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              <div class="content">
+                <h4>Address</h4>
+                <p>Riesstraße 25, 80992 München</p>
+              </div>
+            </div>
 
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="column is-centered has-text-centered">
-            <span class="icon">
-              <i class="fa fa-map-marker"></i>
-            </span>
-            <div class="content">
-              <h4>Address</h4>
-              <p>Riesstraße 25, 80992 München</p>
+          </div>
+          <div class="column">
+            <div class="column is-centered has-text-centered">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <div class="content">
+                <h4>Contact</h4>
+                <a href="mailto:aifen.sui@huawei.com">aifen.sui@huawei.com</a>
+              </div>
             </div>
           </div>
-
         </div>
-        <div class="column">
-          <div class="column is-centered has-text-centered">
-            <span class="icon">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <div class="content">
-              <h4>Contact</h4>
-              <a href="mailto:aifen.sui@huawei.com">aifen.sui@huawei.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </div>
+        <div>
+    </div>
   </section>
 
   <footer class="footer">
