@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python3 train.py --epochs 100 --batch_size 32 --td_rec_loss_w 0.0 --front_rec_loss_w 0.0 --tl_indicator_loss_w 0.5 --ss_indicator_loss_w 0.5 --feature_alignment_w 0.0 --lambda1 0.5 --lambda2 0.01 --lambda3 0.5
