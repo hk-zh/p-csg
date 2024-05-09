@@ -43,12 +43,12 @@ from leaderboard.autoagents.agent_wrapper import  AgentWrapper, AgentError
 from leaderboard.utils.statistics_manager import StatisticsManager
 from leaderboard.utils.route_indexer import RouteIndexer
 
-# change to what you want
+# change it to what you want
 ############################################################
-DATA_PATH = 'carla_data/clear-weather/data'
-PORT = 20000
-TRAFFIC_PORT = 20500
-NUM_LIST = [1, 2, 3, 4, 5,6, 7, 10] 
+DATA_PATH = 'carla_data/clear-weather'
+PORT = 2000
+TRAFFIC_PORT = 8000
+NUM_LIST = [1, 2, 3, 4, 5, 6, 7, 10] 
 TYPE_LIST = ['long', 'short', 'tiny']
 ############################################################
 
