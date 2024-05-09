@@ -52,8 +52,19 @@ We used two datasets for different experimental settings:
 - clear_weather_data: contains only `ClearNoon` weather. This dataset is used for the experiments described in the paper and generalization to new town results shown in the [video](https://youtu.be/WxadQyQ2gMs).
 - 14_weathers_data: contains 14 preset weather conditions mentioned in ```leaderboard/team_code/auto_pilot.py```. This dataset is used for training models for the [leaderboard](https://leaderboard.carla.org/leaderboard) and the generalization to new weather results shown in the [video](https://youtu.be/WxadQyQ2gMs).
 
-The dataset is structured as follows:
+To get additional traffic light and stop sign information, please 
+- keep your Carla Running
+```Shell
+./CarlaUE4.sh --world-port=2000 --tm-port=8000
+```
+- modify ```team_code/utils/prepare_light.py``` and ```team_code/utils/prepare_stopsign.py```. (specify the port and Carla root)
+- run the following code
+```Shell
+python team_code/utils/prepare_light.py
+python team_code/utils/prepare_stopsign.py
+```
 
+The dataset is structured as follows:
 ```
 - TownX_{tiny,short}: corresponding to different towns and routes files
     - routes_X: contains data for an individual route
