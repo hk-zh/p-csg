@@ -183,7 +183,20 @@ Spin up a CARLA server (described above) and run the required agent. The adequat
 ```Shell
 CUDA_VISIBLE_DEVICES=0 ./leaderboard/scripts/run_evaluation.sh  <carla root> <working directory>
 ```
-
+## Citation
+If you find this work meaningful, please cite
+```
+@INPROCEEDINGS{10422239,
+  author={Zhou, Hongkuan and Sui, Aifen and Shi, Letian and Li, Yinxian},
+  booktitle={2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)}, 
+  title={Penalty-Based Imitation Learning With Cross Semantics Generation Sensor Fusion for Autonomous Driving}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1876-1883},
+  keywords={Semantics;Pipelines;Sensor fusion;Feature extraction;Safety;Reliability;Autonomous vehicles},
+  doi={10.1109/ITSC57777.2023.10422239}}
+```
 ## Acknowledgements
 
 - This work was supported by Huawei Trustworthy Technology and Engineering Laboratory.
